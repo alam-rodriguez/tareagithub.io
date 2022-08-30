@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1815182de3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>programas de tarea</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="https://alam-rodriguez.github.io/alam-rodriguez-curriculum_Alam_Rodriguez.github.io/"><p>Nombre: Alam Rodriguez</p></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><p>Celular: 829-319-8834</p>   </a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="file:///C:/tareas/programas-tarea3/html/index.html"><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+
+    <div class="programas">
+        <form action="">
+            <input type="number" id="inputNumero" class="inputNumero-tarea1" placeholder="ingrese numero y lo multiplicare hasta el ">
+            <input type="number" id="inputNumero2" placeholder="" value="10">
+            <div id="parrafo"></div>
+            <input type="submit" value="Enviar" id="submit">
+            <input type="submit" value="Borrar" id="delete">
+        </form>
+    </div>
+
+        
+       
+    
+
+<script>
+
+    let inputNumero  = document.querySelector('#inputNumero');
+    let inputNumero2 = document.querySelector('#inputNumero2');
+    let parrafo      = document.querySelector('#parrafo');
+    let submit       = document.querySelector('#submit');
+    let borrar       = document.querySelector('#delete');
+    
+
+    submit.addEventListener('click',(e)=>{
+        e.preventDefault();
+        for(let i = 1; i <= inputNumero2.value; i++){
+            let resultado = i * inputNumero.value;
+            let operacion = inputNumero.value+'X'+ i +' = '+ resultado;
+
+            let respuesta = '<p class="resultado">'+ operacion +'</p>';
+            parrafo.innerHTML += respuesta;
+        }
+    })
+    borrar.addEventListener('click',()=>{
+        inputNumero.value = '';
+        parrafo.value = '';
+    })
+
+    
+       
+
+    
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1815182de3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>programas de tarea</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="https://alam-rodriguez.github.io/alam-rodriguez-curriculum_Alam_Rodriguez.github.io/"><p>Nombre: Alam Rodriguez</p></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><p>Celular: 829-319-8834</p>   </a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="file:///C:/tareas/programas-tarea3/html/index.html"><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+    
+    <div class="programas">
+        <form action="">
+            <input type="number" id="inputNumero1" class="inputNumero inputNumero-tarea3" placeholder="ingrese cualquier numero para comprobar si es un numero primo">
+            <input type="number" id="inputNumero2" class="inputNumero inputNumero-tarea3" placeholder="ingrese cualquier numero para comprobar si es un numero primo">
+            <div id="parrafo"></div>
+
+            
+            <input type="submit" value="enviar" id="submit">
+        </form>
+    </div>
+        
+       
+    
+
+<script>
+    
+    let inputNumero1 = document.querySelector('#inputNumero1');
+    let inputNumero2 = document.querySelector('#inputNumero2');
+    let parrafo      = document.querySelector('#parrafo');
+    let submit = document.querySelector('#submit');
+
+    submit.addEventListener('click',(e)=>{
+        e.preventDefault();
+
+        function numeroPrimo(numero){
+            let repuesta; 
+            if (numero<=1) return false;
+            for (let i = 2; i <= numero-1; i++)
+                if (numero % i == 0) return respuesta = numero + ' no es primo';
+            return respuesta = numero + ' si es primo';
+        }
+
+        parrafo.innerHTML = '<h3>'+ (numeroPrimo(inputNumero1.value))+'</h3>';
+
+        
+
+
+        function numeroPrimo(numero){
+            let repuesta; 
+            if (numero<=1) return false;
+            for (let i = 2; i <= numero-1; i++)
+                if (numero % i == 0) return respuesta = numero + ' no es primo';
+            return respuesta = numero + ' si es primo';
+        }
+
+        parrafo.innerHTML = '<h3>'+ (numeroPrimo(inputNumero2.value))+'</h3>';
+
+        
+
+        // let respuesta;
+        // for(let i = Number(inputNumero1.value); i<= Number(inputNumero2.value); i++){
+        //     for(let j = 2; j <= [i]; j++){
+        //         if( i % j === 0 ){
+        //             respuesta = [i] +' no es primo';
+        //         }else {
+        //             respuesta = [i] +' si es primo';
+        //         }
+        //         // console.log(j)
+        //     }
+        //     console.log(respuesta)
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // for(let i = 2 ; i <= inputNumero1.value; i++){
+        //     if( inputNumero1.value % i == 0){
+        //         let respuesta = 'no es un primo';
+        //         return respuesta;
+        //     }else {
+        //         let respuesta = ' si es un primo';
+        //         return respuesta;
+        //     }
+        // }
+        // console.log()
+
+
+
+
+
+
+
+
+
+
+
+        // let respuesta = '';
+
+        // for(let i = Number(inputNumero1.value); i <= Number(inputNumero2.value); i++){
+        //     for(let j = 2;j <= [i]; j++){
+        //         if( [i] % [j] === 0){
+        //             respuesta = [i] + 'no es primo';
+        //         }else {
+        //             respuesta = [i] + 'si es primo';
+        //         }
+                
+        //     }
+            
+        // }
+        //  console.log(respuesta)
+
+
+
+
+        // let numero = 6;
+        // let respuesta = '';
+        // for(let i = 1; i <= 10;i++){
+        //     if(numero % [i] === 0 ){
+        //         respuesta = numero + ' no es primo';
+        //     }else {
+        //         respuesta = numero + ' si es primo';
+        //     }
+        // }
+        // console.log(respuesta)
+
+        // let numeros = [];
+        // for(let i = inputNumero1.value; i <= inputNumero2.value; i++){
+        //     numeros.push(Number(i));
+        //     for(let j = 2; i <=inputNumero2.value; j++){
+        //         if(numeros.pop() % i === 0){
+        //             console.log([i] + ' no es primo')
+        //         }else {
+        //             console.log([i] + ' si es primo')
+        //         }
+        // }
+        // }
+        // console.log(numeros)
+        
+        // let respuesta;
+        // if(inputNumero1.value <=1) return respuesta = 'no es un numero primo';
+        // for(let i = Number(inputNumero1.value); i <= Number(inputNumero2.value); i++){
+        //     if(i % )
+        // }
+
+
+/*      
+        let numeros = [];
+        let respuesta;
+
+        for( var i = Number(inputNumero1.value); i<= Number(inputNumero2.value); i++){
+            numeros.push(i);
+            
+        }
+        console.log(numeros)
+        for(let j = 0; j < numeros.length; j++){
+            primos = numeros[j];
+            if(primos % j ===0){
+                console.log(primos + ' no es primo')
+            }else {
+                console.log(primos + ' si es primo')
+            }
+        }
+*/          
+        // console.log('areglo ' + numeros);
+
+        
+        
+        
+
+
+       
+    })
+
+    
+    // for(let i = Number(inputNumero1.value); i <= Number(inputNumero2.value);i++){
+    //         console.log(i + ' i');
+        
+    //         for(let j = 2; j <= i; j++){
+    //             console.log(j + ' j');
+                
+    //         }
+    //    }
+
+
+        // function isPrime(n){
+        //     let repuesta; 
+        //     if (n<=1) return false;
+        //     for (var i = 2; i <= n-1; i++)
+        //         if (n % i == 0) return respuesta = 'no es primo';
+        //     return respuesta = 'si es primo';
+        // }
+
+        // console.log(isPrime(70));
+        // console.log(isPrime(23));
+
+
+
+
+    // };
+    // hello(10);
+
+    
+
+</script>
+</body>
+</html>

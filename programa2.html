@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1815182de3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>programas de tarea</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="https://alam-rodriguez.github.io/alam-rodriguez-curriculum_Alam_Rodriguez.github.io/"><p>Nombre: Alam Rodriguez</p></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><p>Celular: 829-319-8834</p>   </a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a> 
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=18293198834&text&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="file:///C:/tareas/programas-tarea3/html/index.html"><i class="fa-solid fa-house"></i></a>
+        </nav>
+    </header>
+    
+    <div class="programas">
+        <form action="">
+            <input type="number" id="inputNumero1" class="inputNumero numeroMayor inputNumero-tarea2" placeholder="Ingrese un numero aqui ">
+            <input type="number" id="inputNumero2" class="inputNumero numeroMayor inputNumero-tarea2 tarea2" placeholder=" y otro aqui y vea los numeros pares que hay entre ellos">
+            <div id="parrafo"></div>
+            <input type="submit" value="enviar" id="submit">
+        </form>
+    </div>
+        
+       
+    
+
+<script>
+
+    let inputNumero1 = document.querySelector('#inputNumero1');
+    let inputNumero2 = document.querySelector('#inputNumero2');
+    let parrafo      = document.querySelector('#parrafo');
+    let ouputNumero  = document.querySelector('#ouputNumero'); 
+    let submit       = document.querySelector('#submit');
+
+    submit.addEventListener('click',(e)=>{
+        e.preventDefault();
+        parrafo.innerHTML = '<p class="resultado"> los numeros PAR entre el ' + inputNumero1.value +' y el '+ inputNumero2.value +' son: </p>';
+        for(let i = inputNumero1.value;i <= inputNumero2.value;i++){
+            if( (i%2) == 0){
+                let respuesta = '<p class="resultado">'+ i + '</p>';
+                parrafo.innerHTML += respuesta;
+        }
+        }
+    })
+    
+    
+    
+
+</script>
+</body>
+</html>
